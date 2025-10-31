@@ -99,6 +99,39 @@ header span {
     color: var(--secondary-color);
 }
 
+#nav-object-sec {
+    list-style-type: none;
+    border: solid 2px var(--accent-color);
+    background-color: var(--primary-color);
+    padding: 8px;
+    font-size: medium;
+    font-weight: bold;
+
+    font-family: var(--text-font);
+
+}
+
+#nav-object-sec a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#nav-object-third {
+    list-style-type: none;
+    border: solid 2px var(--accent-color);
+    background-color: var(--primary-color);
+    padding: 8px;
+    font-size: medium;
+    font-weight: bold;
+
+    font-family: var(--text-font);
+
+}
+
+#nav-object-third a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
 h1 {
     font-family: var(--heading-font);
     padding-left: 20px;

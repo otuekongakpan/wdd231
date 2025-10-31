@@ -48,7 +48,7 @@
         font-family: var(--text-font);
 
     }
-    
+
 #nav-object:hover {
   background-color: var(--accent-color);
 }
@@ -160,5 +160,68 @@
     }
     .hamburger {
         display: none;
+    }
+        #nav-object-sec {
+        list-style-type: none;
+        border: solid 2px var(--accent-color);
+        background-color: var(--primary-color);
+        padding: 10px;
+        font-size: medium;
+        font-weight: bold;
+
+        font-family: var(--text-font);
+
+    }
+    
+#nav-object-sec:hover {
+  background-color: var(--accent-color);
+}
+
+
+#nav-object-sec:hover a {
+  color: var(--primary-color);
+}
+
+#nav-object-sec a {
+  display: block;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+    #nav-object-sec a{
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+        #nav-object-third {
+        list-style-type: none;
+        border: solid 2px var(--accent-color);
+        background-color: var(--primary-color);
+        padding: 10px;
+        font-size: medium;
+        font-weight: bold;
+
+        font-family: var(--text-font);
+
+    }
+    
+#nav-object-third:hover {
+  background-color: var(--accent-color);
+}
+
+
+#nav-object-third:hover a {
+  color: var(--primary-color);
+}
+
+#nav-object-third a {
+  display: block;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+    #nav-object-third a{
+        text-decoration: none;
+        color: var(--secondary-color);
     }
 }
