@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap" rel="stylesheet">
-
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <header>
@@ -53,20 +54,27 @@
 
         <section class="web-cert-courses">
             <h2>Web Certificate Courses</h2>
+            <div id="courseSelect">
+                    <a href="#" id="fullCourses">Full Courses</a>
+                    <a href="#" id="wddCourses">WDD Courses</a>
+                    <a href="#" id="cseCourses">CSE Courses</a>
+            </div>
+            <div id="certGrid">
 
-            <p>The total credits for the courses listed above is 6</p>
+            </div>
+            <p>The total credits for the courses listed above is <span id= totalCredit></span></p>
         </section>
     </main>
 
     <footer>
         <div class="logos">
-            <a href="https://github.com/otuekongakpan"><img src="images/github.svg" alt="github page" width="30" height="30"></a>
-            <a href="https://linkedin.com/in/otuekong-akpan-88294b38a"><img src="images/linkedin.svg" alt="linkedin profile" width="30" height="30"></a>
-            <a href="https://google.com"><img src="images/google-circle.svg" alt="google search" width="30" height="30"></a>
+            <a href="https://github.com/otuekongakpan" target="_blank"><img src="images/github.svg" alt="github page" width="30" height="30"></a>
+            <a href="https://linkedin.com/in/otuekong-akpan-88294b38a" target="_blank"><img src="images/linkedin.svg" alt="linkedin profile" width="30" height="30" ></a>
+            <a href="https://google.com" target="_blank"><img src="images/google-circle.svg" alt="google search" width="30" height="30"></a>
         </div>
         <p>©️<span id="currentyear"></span> | Otuekong Akpan | Lagos, Nigeria</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/navigation.js"></script>
+    
 </body>
 </html>

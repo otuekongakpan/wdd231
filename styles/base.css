@@ -214,6 +214,58 @@ section {
 
 }
 
+    #certGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+        #courseSelect {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    #fullCourses {
+        background-color: var(--primary-color);
+        padding: 15px;
+        text-decoration: none;
+        color: var(--secondary-color);
+        border-radius: 10px;
+        border: none;
+        font-weight: bolder;
+        font-family: var(--text-font);
+
+    }
+
+    #wddCourses {
+    
+        background-color: var(--primary-color);
+        padding: 15px;
+        text-decoration: none;
+        color: var(--secondary-color);
+        border-radius: 10px;
+        border: none;
+        font-weight: bolder;
+        font-family: var(--text-font);
+    
+    }
+    #cseCourses {
+        background-color: var(--primary-color);
+        padding: 15px;
+        text-decoration: none;
+        color: var(--secondary-color);
+        border-radius: 10px;
+        border: none;
+        font-weight: bolder;
+        font-family: var(--text-font);
+    }
+    .course-card {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+
+    }
+
 footer {
     border-top: solid 1px #ddd;
     padding-left: 20px;
