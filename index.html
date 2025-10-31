@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website about Otuekong Akpan. This includes courses I have worked on and currently working on">
+    <meta name="author" content="Otuekong Akpsn">
+    <title>My Course Home Page</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="site logo" width="512" height="512">
+        <span>Otuekong Akpan</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="navMenu">
+        <ul class="nav-list">
+            <li id="nav-object"><a href="index.html">Home</a></li>
+            <li id="nav-object"><a href="#">Chamber Project<a></a></li>
+            <li id="nav-object"><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="grid">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p> 
+                    Hi! I’m Otuekong Akpan, a passionate software development
+                    student who enjoys learning how technology solves real-world problems.
+                    I’m currently building projects that strengthen my skills in web development,
+                    programming, and problem-solving. I’m always eager to learn new tools, collaborate
+                    on creative ideas, and grow as a developer.
+                </p>
+            </section>
+
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/student.jpg"  alt="Student Photo" width="160" height="180">
+            </section>
+
+
+        </section>
+        <section class="web-cert-courses">
+            <h2>Web Certificate Courses</h2>
+
+            <p>The total credits for the courses listed above is 6</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️<span id="currentyear"></span> | Otuekong Akpan | Lagos, Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>
