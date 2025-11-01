@@ -86,11 +86,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const card = document.createElement("div");
             card.classList.add("course-card");
 
+            if (course.completed) {
+                card.classList.add('completed');
+            }
             card.innerHTML = `
             <h3>${course.subject} ${course.number}</h3>
             `;
             container.appendChild(card);
         });
+
+        showTotal(courses);
     }
 
     displayCourses(courses);
@@ -98,26 +103,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const allCourses = document.querySelector("#fullCourses");
     allCourses.addEventListener("click", () => {
         let all = courses.filter(course => course.subject);
+        event.preventDefault();
         displayCourses(all);
     })
 
-        const wddCourses = document.querySelector("#wddCourses");
-        wddCourses.addEventListener("click", () => {
-            let wdd = courses.filter(course => course.subject == "WDD");
-        
+    const wddCourses = document.querySelector("#wddCourses");
+    wddCourses.addEventListener("click", () => {
+        let wdd = courses.filter(course => course.subject == "WDD");
+        event.preventDefault();
         displayCourses(wdd);
     })
 
-        const cseCourses = document.querySelector("#cseCourses");
-        cseCourses.addEventListener("click", () => {
-            let cse = courses.filter(course => course.subject == "CSE");
-        
+    const cseCourses = document.querySelector("#cseCourses");
+    cseCourses.addEventListener("click", () => {
+        let cse = courses.filter(course => course.subject == "CSE");
+        event.preventDefault();
         displayCourses(cse);
-        })
+    })
     
-    
+    function calcTotalCredits(courses) {
+        return courses.reduce((sum, course) => sum + (Number(course.credits) || 0), 0);
+    }
 
+    function showTotal(courses) {
+        const total = calcTotalCredits(courses);
+        document.querySelector('#totalCredit').textContent = total;
 
+    }
+    function completedCourses(courses) {
+        let completed = courses.filter(course => course.completed === "true");
 
+    }
 
 })

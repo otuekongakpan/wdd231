@@ -275,4 +275,10 @@
         border-radius: 15px;
 
     }
+    .course-card.completed {
+        background-color: var(--completed-color);
+        color: #fff;
+    }
+
+    
 }

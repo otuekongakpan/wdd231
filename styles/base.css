@@ -2,6 +2,7 @@
 --primary-color: #0D3B66;
 --secondary-color: #F4D35E;
 --accent-color: #FAF0CA;
+--completed-color: #32CD32;
 --heading-font: "Momo Trust Display", sans-serif;
 --text-font: "Inter", sans-serif;
 
@@ -268,7 +269,24 @@ section {
 
 footer {
     border-top: solid 1px #ddd;
+    margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
 }
+
+
+.logos {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+    .course-card {
+        background-color: var(--secondary-color);
+        border-radius: 15px;
+
+    }
+    .course-card.completed {
+        background-color: var(--completed-color);
+        color: #fff;
+    }
