@@ -276,8 +276,8 @@
 
     }
     .course-card.completed {
-        background-color: var(--completed-color);
-        color: #fff;
+        background-color: var(--accent-color);
+
     }
 
     
