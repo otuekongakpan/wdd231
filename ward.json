@@ -1,0 +1,21 @@
+{
+"ward": {
+       "familyName": "Derrick",
+       "dateMovedToWard": "10th September 1998",
+       "noOfPeopleInFamily": 3,
+       "isBishopric": true
+    },
+"familyMembers": [
+    {
+        "name": "Philips",
+        "gender": "male",
+        "birthDate": "10th October"
+    },
+
+        {
+        "name": "Augustina",
+        "gender": "feemale",
+        "birthDate": "19th November"
+    }
+]
+}
