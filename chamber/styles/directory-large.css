@@ -4,8 +4,6 @@
         margin: 0 auto;
     }
 
-
-    
     .nav-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -27,7 +25,7 @@
     }
 
     #navMenu a:hover {
-        background-color: var(--accent-color);
+
         color: var(--primary-color);
     
 
@@ -44,12 +42,6 @@
         font-family: var(--text-font);
     }
 
-    
-#nav-object:hover {
-  background-color: var(--accent-color);
-}
-
-
 #nav-object:hover a {
   color: var(--primary-color);
 }
@@ -62,7 +54,7 @@
 
     h1 {
         font-family: var(--heading-font);
-        padding-left: 20px;
+
         
     }
 
@@ -97,11 +89,6 @@
         font-family: var(--text-font);
 
     }
-    
-#nav-object-sec:hover {
-  background-color: var(--accent-color);
-}
-
 
 #nav-object-sec:hover a {
   color: var(--primary-color);
@@ -113,11 +100,6 @@
   color: var(--secondary-color);
 }
 
-    #nav-object-sec a{
-        text-decoration: none;
-        color: var(--secondary-color);
-    }
-
         #nav-object-third {
         list-style-type: none;
 
@@ -128,11 +110,6 @@
         font-family: var(--text-font);
 
     }
-    
-#nav-object-third:hover {
-  background-color: var(--accent-color);
-}
-
 
 #nav-object-third:hover a {
   color: var(--primary-color);
@@ -144,11 +121,6 @@
   color: var(--secondary-color);
 }
 
-    #nav-object-third a{
-        text-decoration: none;
-        color: var(--secondary-color);
-    }
-
         #nav-object-fourth {
         list-style-type: none;
         padding: 10px;
@@ -159,24 +131,25 @@
 
     }
     
-#nav-object-fourth:hover {
-  background-color: var(--accent-color);
-}
-
-
-#nav-object-fourth:hover a {
-  color: var(--primary-color);
-}
-
 #nav-object-fourth a {
   display: block;
   text-decoration: none;
   color: var(--secondary-color);
 }
 
-    #nav-object-fourth a{
-        text-decoration: none;
-        color: var(--secondary-color);
-    }
+.hero img {
+    width: 100%;
+    height: auto;
+}
 
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: left;
+
+}
 }

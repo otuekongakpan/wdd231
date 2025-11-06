@@ -15,6 +15,10 @@ header {
     column-gap: 8px;
 }
 
+p, h1, h2, h3, a, img{
+    padding-left:20px;
+}
+
 .header-grid {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -24,8 +28,12 @@ header {
 
 .logo {
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-columns: 0.1fr 1fr;
     text-align: center;
+}
+
+.logo-grid2 span{
+    padding: 0;
 }
 
 .grid1 {
@@ -35,9 +43,7 @@ header {
 
 header img {
     display: block;
-
     height: auto;
-
     padding-left: 20px;;
 }
 
@@ -46,8 +52,6 @@ header span {
     font-family: var(--heading-font);
     color: var(--primary-color);
     padding-left: 20px;
-
-
 }
 
 .hamburger{
@@ -56,7 +60,6 @@ header span {
     color: var(--primary-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 .hamburger::after {
@@ -68,3 +71,14 @@ header span {
     content: "\00D7";
     font-size: 2rem
 }
+
+#join-us {
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 10px 0 0 20px;
+    padding: 3px 20px;
+}
+
