@@ -5,3 +5,49 @@
 --heading-font: "Momo Trust Display", sans-serif;
 --text-font: "Inter", sans-serif;
 }
+
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    padding-left: 20px;;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding-left: 20px;
+
+
+}
+
+.hamburger{
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2rem
+}

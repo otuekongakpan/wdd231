@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a chamber of Commeerce directory page built by Otuekong Akpan for WDD231 w02 team project">
     <meta name="author" content="Otuekong Akpan">
-    <meta property="og:title" content="Igando Chamber of Commerce Directory Page">
+    <meta property="og:title" content="Igando Chamber of Commerce">
     <meta property="og:image" content="https://otuekongakpan.github.io/wdd231/chamber/images/favicon.ico">
     <meta property="og:description" content="Connecting businesses, promoting growth, and supporting our local economy — join the Chamber of Commerce and make a difference in your community">
     <meta property="og:url" content="https://otuekongakpan.github.io/wdd231/chamber/">
@@ -24,6 +24,95 @@
     <script src="scripts/chamber.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo.png" alt="chamber logo" width="30px" height="30px">
+        <span>Igando Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="navMenu">
+        <ul class="nav-list">
+            <li id="nav-object"><a href="#">Home</a></li>
+            <li id="nav-object-sec"><a href="directory.html">Directory</a></li>
+            <li id="nav-object-third"><a href="#">Join</a></li>
+            <li id="nav-object-third"><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero.svg" alt="hero image" class="heroImage">
+            <h1></h1>
+            <a href="#">Join us</a>
+        </div>
+
+        <h1>Directory Page</h1>
+
+        <section class="realData">
+            <div class="realDataGrid">
+                <div class="events">
+                    <h2>Events</h2>
+                    <div class="eventContent1">
+                        <h3>Business Networking Breakfast</h3>
+                        <p>Join local entrepreneurs and professionals for a morning of networking and collaboration. 
+                        <br><strong>Date:</strong> November 10, 2025 | <strong>Venue:</strong> Igando Civic Hall</p>
+                    </div>
+
+                    <div class="eventContent2">
+                        <h3>Small Business Growth Workshop</h3>
+                        <p>Learn strategies for marketing, finance, and digital presence to grow your business in today’s economy. 
+                        <br><strong>Date:</strong> November 18, 2025 | <strong>Venue:</strong> Igando Community Center</p>
+                    </div>
+
+                    <div class="eventContent3">
+                        <h3>Annual Chamber Gala & Awards Night</h3>
+                        <p>Celebrate the achievements of local businesses and community leaders at our annual Chamber Gala. 
+                        <br><strong>Date:</strong> December 5, 2025 | <strong>Venue:</strong> Royal Orchid Banquet Hall</p>
+                    </div>
+                </div>
+
+                <div class="currentWeather">
+                    <h3>Current Weather</h3>
+                    <img src="images/weatherlogo.png" alt="weather logo" width="40" height="40">
+
+                </div>
+                <div class="weatherForecast">
+                    <h3>Weather Forecast</h3>
+                    <p>Today:<span id="todayForecast"></span>°F</p>
+                    <p>Wednesday:<span id="wednesdayForecast"></span>°F</p>
+                    <p>Thursday:<span id="thursdayForecast"></span>°F</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="members">
+            <div id="memberGrid">
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerGrid">
+            <div id="footer1">
+                <p>Igando Chamber of Commerce</p>
+                <p>50 Lifeway Avenue, Igando, Mail 788</p>
+                <p>info@igandocc.org</p>
+                <p>(234) 8123456789</p>
+            </div>
+            <div id="footer2">
+                <img src="images/youtube.svg" alt="youtube logo" width="30px" height="30px">
+                <img src="images/twitter.svg" alt="twitter logo" width="30px" height="30px">
+                <img src="images/linkedin.svg" alt="linkedIn logo" width="30px" height="30px">
+            </div>
+            <div id="footer3">
+                <p>WDD231 Class Project</p>
+                <p>Otuekong Akpan</p>
+                <p>©️<span id="currentyear"></span> Igando Chamber of Commerce</p>
+                <p>Last Modification: <span id=lastModified></span></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
