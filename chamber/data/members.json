@@ -5,7 +5,7 @@
         "address": "Olayinka Province, Lagos",
         "phoneNumber": "234-8178694203",
         "url": "https://orangeglobale.com",
-        "image": "https://otuekongakpan.github.io/wdd231/images/orangeglobal.jpg",
+        "image": "https://otuekongakpan.github.io/wdd231/chamber/images/orangeglobal.jpg",
         "membershipLevel": "Gold",
         "foundedYear": "1996",
         "isActiveMember": true
@@ -17,7 +17,7 @@
         "address": "Avenue Way, Lagos",
         "phoneNumber": "234-8178227203",
         "url": "https://eritrixismadeup.com",
-        "image": "https://otuekongakpan.github.io/wdd231/images/eritrixltd.jpg",
+        "image": "https://otuekongakpan.github.io/wdd231/chamber/images/eritrixltd.jpg",
         "membershipLevel": "Silver",
         "foundedYear": "1999",
         "isActiveMember": true
@@ -28,7 +28,7 @@
         "address": "Taylor Avenue, Lagos",
         "phoneNumber": "234-8178694908",
         "url": "https://divineisnot.com",
-        "image": "https://otuekongakpan.github.io/wdd231/images/divineultimate.jpg",
+        "image": "https://otuekongakpan.github.io/wdd231/chamber/images/divineultimate.jpg",
         "membershipLevel": "Gold",
         "foundedYear": "2004",
         "isActiveMember": true
@@ -39,7 +39,7 @@
         "address": "Bode Street, Lagos",
         "phoneNumber": "234-8178694203",
         "url": "https://yemisiventures.com",
-        "image": "https://otuekongakpan.github.io/wdd231/images/yemisiventure.jpg",
+        "image": "https://otuekongakpan.github.io/wdd231/chamber/images/yemisiventure.jpg",
         "membershipLevel": "Bronze",
         "foundedYear": "2012",
         "isActiveMember": true
@@ -50,7 +50,7 @@
         "address": "Mcarthur Province, Lagos",
         "phoneNumber": "234-9178633203",
         "url": "https://waynesglobale.com",
-        "image": "https://otuekongakpan.github.io/wdd231/images/waynesglobal.jpg",
+        "image": "https://otuekongakpan.github.io/wdd231/chamber/images/waynesglobal.jpg",
         "membershipLevel": "Silver",
         "foundedYear": "2016",
         "isActiveMember": true
@@ -61,7 +61,7 @@
         "address": "Anthony Way, Lagos",
         "phoneNumber": "234-8033394203",
         "url": "https://pharmaolabisi.com",
-        "image": "https://otuekongakpan.github.io/wdd231/images/olabisipharma.jpg",
+        "image": "https://otuekongakpan.github.io/wdd231/chamber/images/olabisipharma.jpg",
         "membershipLevel": "Gold",
         "foundedYear": "2018",
         "isActiveMember": true
@@ -72,7 +72,7 @@
         "address": "Ikeja, Lagos",
         "phoneNumber": "234-8012345678",
         "url": "https://westerninvestmentsltd.com",
-        "image": "https://otuekongakpan.github.io/wdd231/images/westerninvestment.jpg",
+        "image": "https://otuekongakpan.github.io/wdd231/chamber/images/westerninvestment.jpg",
         "membershipLevel": "Gold",
         "foundedYear": "2012",
         "isActiveMember": true
