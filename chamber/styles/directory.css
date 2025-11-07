@@ -11,12 +11,16 @@ header {
 
     padding: 20px 0 5px 10px;
     align-items: end;
-    border-bottom: solid 1px #ddd;
     column-gap: 8px;
 }
 
 p, h1, h2, h3, a, img{
     padding-left:20px;
+}
+
+a {
+    font-weight: bold;
+    font-family: var(--text-font)
 }
 
 .header-grid {
@@ -78,7 +82,7 @@ header span {
     border-radius: 15px;
     background-color: var(--primary-color);
     color: #fff;
-    margin: 10px 0 0 20px;
-    padding: 3px 20px;
+    margin:20px 0 0 20px;
+    padding: 8px 20px;
 }
 

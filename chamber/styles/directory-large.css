@@ -152,4 +152,24 @@
     text-align: left;
 
 }
+
+.hero-text p {
+    padding-bottom: 10px;
+}
+
+.realDataGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#footer2 {
+    text-align: center;
+}
 }
