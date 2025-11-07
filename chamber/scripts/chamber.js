@@ -38,7 +38,7 @@ function displayMembers(members) {
     const logo = document.createElement("img");
     logo.src = member.image;
     logo.alt = `${member.companyName} logo`;
-    logo.loading = "lazy";
+
 
     imgWrap.appendChild(logo);
     card.appendChild(imgWrap);
