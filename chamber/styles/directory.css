@@ -1,88 +1,180 @@
-:root{
---primary-color: #4464ad;
---secondary-color: #f58f29;
---accent-color: #a4b0f5;
---heading-font: "Momo Trust Display", sans-serif;
---text-font: "Inter", sans-serif;
+/* ========= VARIABLES ========= */
+:root {
+  --primary-color: #3D405B;
+  --secondary-color: #E07A5F;
+  --light-color: #F4F1DE;
+  --text-font: 'Inter', sans-serif;
+  --title-font: 'Momo Trust Display', cursive;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font);
+  line-height: 1.6;
+
+  color: var(--primary-color);
+}
 
 header {
+  padding: 1rem;
 
-    padding: 20px 0 5px 10px;
-    align-items: end;
-    column-gap: 8px;
-}
-
-p, h1, h2, h3, a, img{
-    padding-left:20px;
-}
-
-a {
-    font-weight: bold;
-    font-family: var(--text-font)
 }
 
 .header-grid {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    display: grid;
-    grid-template-columns: 0.1fr 1fr;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo-grid2 span{
-    padding: 0;
+.logo img {
+  width: 35px;
+  height: 35px;
 }
 
-.grid1 {
-    text-align: center;
-    justify-content: center;
+.logo span {
+  font-family: var(--title-font);
+  font-size: 1rem;
+  color: var(--primary-color);
 }
 
-header img {
-    display: block;
-    height: auto;
-    padding-left: 20px;;
+
+#navMenu {
+  display: none;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  width: 100%;
 }
 
-header span {
-    font-size: 1.2rem;
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    padding-left: 20px;
+#navMenu.active {
+  display: flex;
 }
 
-.hamburger{
-    background: none;
-    border: none;
-    color: var(--primary-color);
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.nav-list {
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.9rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: var(--secondary-color);
+}
+
+
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 2rem;
 }
 
 .hamburger::after {
-    content: "\2630";
-    font-size: 2rem;
+  content: "\2630"; 
 }
 
 .hamburger.show::after {
-    content: "\00D7";
-    font-size: 2rem
+  content: "\00D7"; 
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: white;
+}
+
+.hero-text h1 {
+  font-family: var(--title-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
 }
 
 #join-us {
-    text-decoration: none;
-    border: 1px solid var(--primary-color);
-    border-radius: 15px;
-    background-color: var(--primary-color);
-    color: #fff;
-    margin:20px 0 0 20px;
-    padding: 8px 20px;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
 }
 
+.hero-img img {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 1.5rem;
+}
+
+
+.realData {
+  background: white;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.realDataGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.events, .currentWeather, .weatherForecast {
+  background: var(--light-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.events h2 {
+  color: var(--secondary-color);
+  }
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.footerGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+#footer2 img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+
+#wayfinder {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: var(--title-font);
+  color: var(--primary-color);
+}
