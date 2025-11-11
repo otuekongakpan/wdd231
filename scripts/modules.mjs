@@ -1,5 +1,5 @@
 import byuiCourse from "./course.mjs";
-import { populateSelection } from "./sections.mjs";
+import { populateSelections } from "./sections.mjs";
 import { setTitle, renderSections } from "./output.mjs";
 
 
