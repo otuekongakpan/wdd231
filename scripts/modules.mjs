@@ -1,5 +1,5 @@
 import byuiCourse from "./course.mjs";
-import { setSectionSelection } from "./sections.mjs";
+import { populateSelections } from "./sections.mjs";
 import { setTitle, renderSections } from "./output.mjs";
 
 
@@ -15,5 +15,5 @@ document.querySelector("#dropStudent").addEventListener("click", function () {
 });
 
 setTitle(byuiCourse);
-setSectionSelection(byuiCourse.sections);
+populateSelections(byuiCourse.sections);
 renderSections(byuiCourse.sections);
