@@ -8,3 +8,5 @@ export function populateSelections(sections) {
   });
 }
 
+import byuiCourse from "./course.mjs";
+
