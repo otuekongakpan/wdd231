@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleContainer.appendChild(gridBtn);
   toggleContainer.appendChild(listBtn);
 
-  // ✅ Use spotlightSection instead of undefined membersSection
   spotlightSection.insertBefore(toggleContainer, spotlightGrid);
 
   async function getSpotlight() {
