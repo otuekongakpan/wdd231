@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const memberGrid = document.getElementById("memberGrid");
 const jsonURL = "data/members.json"; 
 
@@ -86,3 +87,5 @@ listBtn.addEventListener("click", () => {
 memberGrid.classList.add("grid-view");
 
 getMembers();
+
+});
