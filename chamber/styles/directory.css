@@ -183,6 +183,10 @@ footer {
     padding-left: 20px;
 }
 
+h3 {
+  padding-left: 20px;
+}
+
 .view-toggle {
   text-align: right;
   margin: 1rem;
