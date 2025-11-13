@@ -79,13 +79,21 @@
 
                 <div class="currentWeather">
                     <h3>Current Weather</h3>
-                    <p><span id="currentWeather"></span> °F</p>
-                    <p><span id="weatherDescription"></span></p>
-                    <img id="weather-icon" src="" alt="weather icon">
-                    <figcaption></figcaption>
+                    <figure>
+                        <img id="weather-icon" src="" alt="weather icon">
+                        <figcaption id="captionDesc"></figcaption>
                     </figure>
+                    <p><span id="currentTemp"></span> °F</p>
+                    <p><span id="weatherDescription"></span></p>
+
+                    <p>High: <span id="high"></span> °F</p>
+                    <p>Low: <span id="low"></span> °F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
 
                 </div>
+
                 <div class="weatherForecast">
                     <h3>Weather Forecast</h3>
                     <p>Today: <span id="todayForecast"></span> °F</p>
