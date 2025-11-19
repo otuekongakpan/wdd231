@@ -183,7 +183,9 @@ footer {
     padding-left: 20px;
 }
 
-
+#spolightHeader {
+  padding-left: 20px;
+}
 
 .view-toggle {
   text-align: right;
