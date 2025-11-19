@@ -68,9 +68,10 @@
                 </fieldset>   
                 
                 <fieldset class="title">
-                    <legend><label for="organizationTitle">Title:</label></legend>
-                    <input type="text" id="organizationTitle" name="title" autocomplete="organization-title"  placeholder="Your Title (e.g., CEO)" required>
+                    <legend><label for="organizationTitle">Organizational Title:</label></legend>
+                    <input type="text" id="organizationTitle" name="title" autocomplete="organization-title" placeholder="Your Title (e.g., Senior Manager)" pattern="[A-Za-z\s-]{7,}" title="Only letters, spaces, and hyphens allowed. Minimum 7 characters." required>
                 </fieldset>
+
 
                 <fieldset class="email">
                     <legend><label for= "email">Email:</label></legend>
@@ -83,7 +84,7 @@
                 </fieldset>
 
                 <fieldset class="orgName">
-                    <legend><label for="businessName">Business name:</label></legend>
+                    <legend><label for="businessName">Organization's name:</label></legend>
                     <input type="text" id="businessName" name="business-name" autocomplete="organization"  placeholder="Your Business Name (e.g., Coud's and Sons.co)" title="Enter your organization's name here" required>
                 </fieldset>
 
