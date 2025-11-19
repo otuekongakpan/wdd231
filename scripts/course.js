@@ -92,6 +92,10 @@ document.addEventListener("DOMContentLoaded", function () {
             card.innerHTML = `
             <h3>${course.subject} ${course.number}</h3>
             `;
+            card.addEventListener('click', () => {
+                displayCourseDetails(course);
+             });
+             
             container.appendChild(card);
         });
 
@@ -133,6 +137,27 @@ document.addEventListener("DOMContentLoaded", function () {
     function completedCourses(courses) {
         let completed = courses.filter(course => course.completed === "true");
 
+    }
+
+    function displayCourseDetails(course) {
+        courseDetails.innerHTML = '';
+        courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+        `;
+        courseDetails.showModal();
+    
+        closeModal.addEventListener("click", () => {
+        courseDetails.close();
+        });
+
+
+        
     }
 
 })
