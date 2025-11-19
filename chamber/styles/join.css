@@ -50,3 +50,32 @@ button {
 button:hover {
   background: var(--secondary-color);
 }
+
+#memberDetails {
+    width: 90%;      
+    max-width: 500px;        
+    padding: 20px;
+    transform: translate(50%,25%); 
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+#memberDetails::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+#memberDetails button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--primary-color); 
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#memberDetails button:hover {
+    background-color: var(--secondary-color); 
+}
