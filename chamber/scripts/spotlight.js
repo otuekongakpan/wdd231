@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const website = document.createElement("a");
       website.href = member.url;
       website.textContent = "Visit Website";
-      website.target = "_blank"; // optional: open in new tab
+      website.target = "_blank"; 
       content.appendChild(website);
 
       card.appendChild(content);
