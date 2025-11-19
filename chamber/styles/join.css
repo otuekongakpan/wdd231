@@ -1,4 +1,7 @@
 
+h2 {
+    padding: 20px;
+}
 fieldset {
     border: none;
 }
@@ -14,6 +17,13 @@ input {
 legend {
   font-weight: bold;
   padding-top: 6px;
+}
+
+select {
+    width: 50%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 10px;
 }
 
 textarea {
