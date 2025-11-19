@@ -51,7 +51,7 @@
     </header>
 
     <main>
-        <h1 id="wayfinder">Join</h2>
+        <h1 id="wayfinder">Join</h1>
         
         <section class="application-form">
             <h2>Member Application Form</h2>
@@ -59,45 +59,43 @@
 
                 <fieldset class="firstName">
                     <legend><label for= "fname">First name:</label></legend>
-                    <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name" required>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name"  title="Enter your desired First name here" required>
                 </fieldset>
 
                 <fieldset class="lastName">
                     <legend><label for= "lname">Last name:</label></legend>
-                    <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" required>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="Enter your desired Last name here"required>
                 </fieldset>   
                 
                 <fieldset class="title">
-                    <legend><label for= "title">Title:</label></legend>
-                    <input type="text" id="organizationTitle" name="title" autocomplete="organization-title" required >
+                    <legend><label for="organizationTitle">Title:</label></legend>
+                    <input type="text" id="organizationTitle" name="title" autocomplete="organization"  placeholder="Your Title (e.g., CEO)" required>
                 </fieldset>
 
                 <fieldset class="email">
                     <legend><label for= "email">Email:</label></legend>
-                    <input type="email" id="userEmail" name="email" placeholder="email@yahoo.com">
+                    <input type="email" id="userEmail" name="email" placeholder="email@yahoo.com" title="Enter your desired email here" required>
                 </fieldset>
 
                 <fieldset class="phoneNumber">
                     <legend><label for= "phone">Phone number:</label></legend>
-                    <input type="tel" id="phone" name="phonenumber" title="" autocomplete="tel">
+                    <input type="tel" id="phone" name="phonenumber" title="Enter your desired phone number here" autocomplete="tel" required>
                 </fieldset>
 
                 <fieldset class="membershipLevel">
-                    <legend><label for="membership">Membership Level:</label></legend>
+                    <legend><label for="membership">Membership level:</label></legend>
                     <select id="membership" name="membership" required>
                     <option disabled selected>Select a Level</option>
                     </select>
                 </fieldset>
 
-                <fieldset class="orgDescriptiom">
-                    <legend><label for= "description">Organization's Description:</label></legend>
-                    <textarea name="review" id="reviewText" rows="10" cols="50"></textarea>
+                <fieldset class="orgDescription">
+                    <legend><label for= "description">Organization's description:</label></legend>
+                    <textarea name="description" id="reviewText"  rows="10" cols="50" ></textarea>
                 </fieldset>
 
-                <fieldset class="timeStamp">
-                    <legend><label for= "timestamp">Timestamp:</label></legend>
                     <input type="hidden" id="timestamp" name="timestamp" >
-                </fieldset>
+    
 
                 <fieldset class="submit">
                     <button type="submit">Submit Application</button>
