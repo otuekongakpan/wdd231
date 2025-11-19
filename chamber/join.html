@@ -69,17 +69,22 @@
                 
                 <fieldset class="title">
                     <legend><label for="organizationTitle">Title:</label></legend>
-                    <input type="text" id="organizationTitle" name="title" autocomplete="organization"  placeholder="Your Title (e.g., CEO)" required>
+                    <input type="text" id="organizationTitle" name="title" autocomplete="organization-title"  placeholder="Your Title (e.g., CEO)" required>
                 </fieldset>
 
                 <fieldset class="email">
                     <legend><label for= "email">Email:</label></legend>
-                    <input type="email" id="email" name="email" placeholder="email@yahoo.com" title="Enter your desired email here" required>
+                    <input type="email" id="email" name="email" placeholder="email@yahoo.com" autocomplete="email" title="Enter your desired email here" required>
                 </fieldset>
 
                 <fieldset class="phoneNumber">
                     <legend><label for= "phone">Phone number:</label></legend>
                     <input type="tel" id="phone" name="phonenumber" title="Enter your desired phone number here" autocomplete="tel" required>
+                </fieldset>
+
+                <fieldset class="business">
+                    <legend><label for="businessName">Business name:</label></legend>
+                    <input type="text" id="businessName" name="business-name" autocomplete="business-name"  placeholder="Your Business Name (e.g., Coud's and Sons.co)" required>
                 </fieldset>
 
                 <fieldset class="membershipLevel">
@@ -91,12 +96,11 @@
 
                 <fieldset class="orgDescription">
                     <legend><label for= "description">Organization's description:</label></legend>
-                    <textarea name="description" id="description"  rows="10" cols="50" placeholder="Brief description of your organization"></textarea>
+                    <textarea name="description" id="description"  rows="10" cols="50" placeholder="Brief description of your organization" title="Enter your organizations's description here"></textarea>
                 </fieldset>
 
-                    <input type="hidden" id="timestamp" name="timestamp" >
+                <input type="hidden" id="timestamp" name="timestamp" >
     
-
                 <fieldset class="submit">
                     <button type="submit">Submit Application</button>
                 </fieldset>
