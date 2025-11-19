@@ -64,7 +64,7 @@
 
                 <fieldset class="lastName">
                     <legend><label for= "lname">Last name:</label></legend>
-                    <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="Enter your desired Last name here"required>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="Enter your desired Last name here" required>
                 </fieldset>   
                 
                 <fieldset class="title">
@@ -74,7 +74,7 @@
 
                 <fieldset class="email">
                     <legend><label for= "email">Email:</label></legend>
-                    <input type="email" id="userEmail" name="email" placeholder="email@yahoo.com" title="Enter your desired email here" required>
+                    <input type="email" id="email" name="email" placeholder="email@yahoo.com" title="Enter your desired email here" required>
                 </fieldset>
 
                 <fieldset class="phoneNumber">
@@ -84,14 +84,14 @@
 
                 <fieldset class="membershipLevel">
                     <legend><label for="membership">Membership level:</label></legend>
-                    <select id="membership" name="membership" required>
+                    <select id="membership" name="membership" value="" required >
                     <option disabled selected>Select a Level</option>
                     </select>
                 </fieldset>
 
                 <fieldset class="orgDescription">
                     <legend><label for= "description">Organization's description:</label></legend>
-                    <textarea name="description" id="reviewText"  rows="10" cols="50" ></textarea>
+                    <textarea name="description" id="description"  rows="10" cols="50" ></textarea>
                 </fieldset>
 
                     <input type="hidden" id="timestamp" name="timestamp" >
@@ -105,7 +105,9 @@
         </section>
 
         <section class="member-level-card">
+            <h2>Member Levels</h2>
             <div id="memberCard">
+
 
             </div>
 
