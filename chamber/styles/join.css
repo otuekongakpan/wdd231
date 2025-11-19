@@ -1,0 +1,42 @@
+
+fieldset {
+    border: none;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    width: 50%;
+    
+}
+
+legend {
+  font-weight: bold;
+  padding-top: 6px;
+}
+
+textarea {
+  width: 50%;
+  height: 200px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: var(--secondary-color);
+}
