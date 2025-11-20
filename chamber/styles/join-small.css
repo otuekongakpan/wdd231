@@ -18,4 +18,7 @@
         display: block;
         margin: 0 auto;
     }
+    .memberCard {
+        width: 100%;
+    }
 }
