@@ -19,6 +19,8 @@
         margin: 0 auto;
     }
     .memberCard {
-        width: 100%;
+        width: 90%;
+        margin: 20px auto;
+        display: block;
     }
 }
