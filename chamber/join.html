@@ -53,70 +53,76 @@
     <main>
         <h1 id="wayfinder">Join</h1>
         
-        <section class="application-form">
-            <h2>Member Application Form</h2>
-            <form method="GET" action="thankyou.html" class="form">
+        <div id="container">
+            <div id="container1">
+                <section class="application-form">
+                    <h2>Member Application Form</h2>
+                    <form method="GET" action="thankyou.html" class="form">
 
-                <fieldset class="firstName">
-                    <legend><label for= "fname">First name:</label></legend>
-                    <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name"  title="Enter your desired First name here" required>
-                </fieldset>
+                        <fieldset class="firstName">
+                            <legend><label for= "fname">First name:</label></legend>
+                            <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name"  title="Enter your desired First name here" required>
+                        </fieldset>
 
-                <fieldset class="lastName">
-                    <legend><label for= "lname">Last name:</label></legend>
-                    <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="Enter your desired Last name here" required>
-                </fieldset>   
-                
-                <fieldset class="title">
-                    <legend><label for="organizationTitle">Organizational Title:</label></legend>
-                    <input type="text" id="organizationTitle" name="title" autocomplete="organization-title" placeholder="Your Title (e.g., Senior Manager)" pattern="[A-Za-z\s-]{7,}" title="Only letters, spaces, and hyphens allowed. Minimum 7 characters." required>
-                </fieldset>
-
-
-                <fieldset class="email">
-                    <legend><label for= "email">Email:</label></legend>
-                    <input type="email" id="email" name="email" placeholder="email@yahoo.com" autocomplete="email" title="Enter your desired email here" required>
-                </fieldset>
-
-                <fieldset class="phoneNumber">
-                    <legend><label for= "phone">Phone number:</label></legend>
-                    <input type="tel" id="phone" name="phonenumber" title="Enter your desired phone number here" autocomplete="tel" required>
-                </fieldset>
-
-                <fieldset class="orgName">
-                    <legend><label for="businessName">Organization's name:</label></legend>
-                    <input type="text" id="businessName" name="business-name" autocomplete="organization"  placeholder="Your Business Name (e.g., Coud's and Sons.co)" title="Enter your organization's name here" required>
-                </fieldset>
-
-                <fieldset class="membershipLevel">
-                    <legend><label for="membership">Membership level:</label></legend>
-                    <select id="membership" name="membership" required >
-                    <option value="" disabled selected>Select a Level</option>
-                    </select>
-                </fieldset>
-
-                <fieldset class="orgDescription">
-                    <legend><label for= "description">Organization's description:</label></legend>
-                    <textarea name="description" id="description"  rows="10" cols="50" placeholder="Brief description of your organization" title="Enter your organization's description here"></textarea>
-                </fieldset>
-
-                <input type="hidden" id="timestamp" name="timestamp" >
-    
-                <fieldset class="submit">
-                    <button type="submit">Submit Application</button>
-                </fieldset>
-            </form>
-
-        </section>
-
-        <section class="member-level-card">
-            <h2>Member Levels</h2>
-            <div id="memberCard">
+                        <fieldset class="lastName">
+                            <legend><label for= "lname">Last name:</label></legend>
+                            <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="Enter your desired Last name here" required>
+                        </fieldset>   
+                        
+                        <fieldset class="title">
+                            <legend><label for="organizationTitle">Organizational Title:</label></legend>
+                            <input type="text" id="organizationTitle" name="title" autocomplete="organization-title" placeholder="Your Title (e.g., Senior Manager)" pattern="[A-Za-z\s-]{7,}" title="Only letters, spaces, and hyphens allowed. Minimum 7 characters." required>
+                        </fieldset>
 
 
+                        <fieldset class="email">
+                            <legend><label for= "email">Email:</label></legend>
+                            <input type="email" id="email" name="email" placeholder="email@yahoo.com" autocomplete="email" title="Enter your desired email here" required>
+                        </fieldset>
+
+                        <fieldset class="phoneNumber">
+                            <legend><label for= "phone">Phone number:</label></legend>
+                            <input type="tel" id="phone" name="phonenumber" title="Enter your desired phone number here" autocomplete="tel" required>
+                        </fieldset>
+
+                        <fieldset class="orgName">
+                            <legend><label for="businessName">Organization's name:</label></legend>
+                            <input type="text" id="businessName" name="business-name" autocomplete="organization"  placeholder="Your Business Name (e.g., Coud's and Sons.co)" title="Enter your organization's name here" required>
+                        </fieldset>
+
+                        <fieldset class="membershipLevel">
+                            <legend><label for="membership">Membership level:</label></legend>
+                            <select id="membership" name="membership" required >
+                            <option value="" disabled selected>Select a Level</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset class="orgDescription">
+                            <legend><label for= "description">Organization's description:</label></legend>
+                            <textarea name="description" id="description"  rows="10" cols="50" placeholder="Brief description of your organization" title="Enter your organization's description here"></textarea>
+                        </fieldset>
+
+                        <input type="hidden" id="timestamp" name="timestamp" >
+            
+                        <fieldset class="submit">
+                            <button type="submit">Submit Application</button>
+                        </fieldset>
+                    </form>
+
+                </section>
             </div>
 
-        </section>
+            <div id="container2">
+                <section class="member-level-card">
+                    <h2>Member Levels</h2>
+                    <div id="memberCard">
+
+
+                    </div>
+
+                </section> 
+            </div> 
+        </div>
 
         <dialog id="memberDetails"></dialog>
     </main>

@@ -14,13 +14,14 @@
     width: 100%;
     }
 
-    button {
-        display: block;
-        margin: 0 auto;
-    }
     .memberCard {
         width: 90%;
         margin: 20px auto;
         display: block;
     }
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 }
