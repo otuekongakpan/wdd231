@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     membership.forEach(level => {
         const card = document.createElement("div");
-        card.classList.add("memberCard");
+        card.classList.add("memberCard", "fade-in");
 
         const title = document.createElement("h3");
         title.textContent = level.member;

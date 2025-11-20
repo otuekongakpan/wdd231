@@ -6,3 +6,8 @@ document.getElementById("email").textContent = params.get("email");
 document.getElementById("mobile").textContent = params.get("phonenumber");
 document.getElementById("business").textContent = params.get("business-name");
 document.getElementById("timestamp").textContent = params.get("timestamp");
+
+window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("thankfade").classList.add("show");
+    document.getElementById("infofade").classList.add("show");
+});
