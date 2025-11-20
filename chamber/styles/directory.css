@@ -75,7 +75,8 @@ header {
 }
 
 .nav-list li a:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--light-color);
+  color: var(--secondary-color);
 }
 
 
