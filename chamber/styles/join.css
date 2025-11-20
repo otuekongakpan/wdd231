@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #3D405B;
+  --secondary-color: #742A16;
+  --light-color: #F4F1DE;
+  --text-font: 'Inter', sans-serif;
+  --title-font: 'Momo Trust Display', cursive;
+}
 
 h2, h3 {
     padding: 10px;
@@ -55,7 +62,10 @@ button:hover {
     width: 90%;      
     max-width: 500px;        
     padding: 20px;
-    transform: translate(50%,25%); 
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
     border: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -78,4 +88,10 @@ button:hover {
 
 #memberDetails button:hover {
     background-color: var(--secondary-color); 
+}
+
+.memberCard {
+    background-color: var(--light-color);
+    padding: 10px;
+    
 }
