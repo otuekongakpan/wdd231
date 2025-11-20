@@ -62,12 +62,12 @@
 
                         <fieldset class="firstName">
                             <legend><label for= "fname">First name:</label></legend>
-                            <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name"  title="Enter your desired First name here" required>
+                            <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name"  title="Enter your first name here" required>
                         </fieldset>
 
                         <fieldset class="lastName">
                             <legend><label for= "lname">Last name:</label></legend>
-                            <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="Enter your desired Last name here" required>
+                            <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="Enter your link name here" required>
                         </fieldset>   
                         
                         <fieldset class="title">
@@ -78,12 +78,12 @@
 
                         <fieldset class="email">
                             <legend><label for= "email">Email:</label></legend>
-                            <input type="email" id="email" name="email" placeholder="email@yahoo.com" autocomplete="email" title="Enter your desired email here" required>
+                            <input type="email" id="email" name="email" placeholder="email@yahoo.com" autocomplete="email" title="Enter your email here" required>
                         </fieldset>
 
                         <fieldset class="phoneNumber">
                             <legend><label for= "phone">Phone number:</label></legend>
-                            <input type="tel" id="phone" name="phonenumber" title="Enter your desired phone number here" autocomplete="tel" required>
+                            <input type="tel" id="phone" name="phonenumber" title="Enter your phone number here" autocomplete="tel" required>
                         </fieldset>
 
                         <fieldset class="orgName">
@@ -92,10 +92,15 @@
                         </fieldset>
 
                         <fieldset class="membershipLevel">
-                            <legend><label for="membership">Membership level:</label></legend>
-                            <select id="membership" name="membership" required >
-                            <option value="" disabled selected>Select a Level</option>
+                           <label for="membership">Membership Level:</label>
+                            <select id="membership" name="membership" required>
+                                <option value="" disabled selected>Select a Level</option>
+                                <option value="np"></option>
+                                <option value="bronze"></option>
+                                <option value="silver"></option>
+                                <option value="gold"></option>
                             </select>
+
                         </fieldset>
 
                         <fieldset class="orgDescription">

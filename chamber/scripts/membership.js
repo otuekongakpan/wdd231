@@ -1,23 +1,17 @@
-const memberLevels = [
-  { value: "np",    name: "Non Profit Membership" },
-  { value: "bronze", name: "Bronze Membership" },
-  { value: "silver", name: "Silver Membership" },
-  { value: "gold",   name: "Gold Membership" }
-];
+document.addEventListener("DOMContentLoaded", () => {
 
-const membershipSelect = document.getElementById("membership");
+    const memberLevels = [
+        { value: "np", label: "Non Profit Membership" },
+        { value: "bronze", label: "Bronze Membership" },
+        { value: "silver", label: "Silver Membership" },
+        { value: "gold", label: "Gold Membership" }
+    ];
 
+    const membershipSelect = document.getElementById("membership");
 
-membershipSelect.innerHTML = "";
+    memberLevels.forEach(level => {
+        const opt = membershipSelect.querySelector(`option[value="${level.value}"]`);
+        if (opt) opt.textContent = level.label;
+    });
 
-const placeholder = document.createElement("option");
-placeholder.value = "";
-placeholder.textContent = "Select a Level";
-membershipSelect.appendChild(placeholder);
-
-memberLevels.forEach(level => {
-  const option = document.createElement("option");
-  option.value = level.value;   
-  option.textContent = level.name;
-  membershipSelect.appendChild(option);
 });
