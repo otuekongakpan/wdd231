@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a chamber of Commerce Home page built by Otuekong Akpan for WDD231 w03 team project">
+    <meta name="description" content="This is a chamber of Commerce Thank you page built by Otuekong Akpan for WDD231 w04 team project">
     <meta name="author" content="Otuekong Akpan">
     <meta property="og:title" content="Igando Chamber of Commerce">
     <meta property="og:image" content="https://otuekongakpan.github.io/wdd231/chamber/images/hero.svg">
     <meta property="og:description" content="Connecting businesses, promoting growth, and supporting our local economy — join the Chamber of Commerce and make a difference in your community">
     <meta property="og:url" content="https://otuekongakpan.github.io/wdd231/chamber/">
 
-    <title>Thank You</title>
+    <title>Thaank You!</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-small.css">
     <link rel="icon" href="images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,10 +25,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
-<main>
-    <p>Thank you</p>
-    
-</main>
+<body>
+    <header>
+        <div class="header-grid">
+            <div class="logo">
+            <img src="images/logo.png" alt="Chamber logo" width="30" height="30">
+            <span>Igando Chamber of Commerce</span>
+            </div>
+            <button id="ham-btn" class="hamburger" aria-label="navigation button"></button>
+        </div>
+
+            <div class="grid2">
+                <nav id="navMenu">
+                    <ul class="nav-list">
+                        <li id="nav-object"><a href="index.html">Home</a></li>
+                        <li id="nav-object-sec"><a href="directory.html">Directory</a></li>
+                        <li id="nav-object-third"><a href="join.html">Join</a></li>
+                        <li id="nav-object-fourth"><a href="#">Discover</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <main class="thankyou-container">
+        <h1>Thank You!</h1>
+        <p>Your form has been successfully submitted.</p>
+
+        <section class="submitted-info">
+            <h2>Your Information</h2>
+
+            <p><strong>First Name:</strong> <span id="firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile:</strong> <span id="mobile"></span></p>
+            <p><strong>Business Name:</strong> <span id="business"></span></p>
+            <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerGrid">
+            <div id="footer1">
+                <p>Igando Chamber of Commerce</p>
+                <p>50 Lifeway Avenue, Igando, Mail 788</p>
+                <p>info@igandocc.org</p>
+                <p>(234) 8123456789</p>
+            </div>
+            <div id="footer2">
+                <img src="images/youtube.svg" alt="youtube logo" width="30" height="30">
+                <img src="images/twitter.svg" alt="twitter logo" width="30" height="30">
+                <img src="images/linkedin.svg" alt="linkedIn logo" width="30" height="30">
+            </div>
+            <div id="footer3">
+                <p>WDD231 Class Project</p>
+                <p>Otuekong Akpan</p>
+                <p>©️<span id="currentyear"></span> Igando Chamber of Commerce</p>
+                <p>Last Modification: <span id=lastModified></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

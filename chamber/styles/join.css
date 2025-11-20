@@ -108,3 +108,18 @@ button:hover {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+
+.thankyou-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.submitted-info {
+  background: var(--light-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 20px;
+}
