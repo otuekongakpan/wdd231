@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             member: "Non Profit Membership Level",
             star: 0,
-            description: "Free membership option designed for nonprofits needing visibility and basic community access.",
+            description: "Free membership option designed for nonprofits needing visibility and basic community access for 20000 NGN.",
             benefits: [
                 "Basic directory listing",
                 "Access to newsletters",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             member: "Bronze Membership Level",
             star: 1,
-            description: "Entry-level paid membership for small businesses wanting more engagement and exposure.",
+            description: "Entry-level paid membership for small businesses wanting more engagement and exposure for 40000 NGN.",
             benefits: [
                 "Standard directory listing",
                 "1 social media spotlight per year",
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             member: "Silver Membership Level",
             star: 2,
-            description: "Intermediate membership offering higher visibility and additional promotional opportunities.",
+            description: "Intermediate membership offering higher visibility and additional promotional opportunities for 80000 NGN.",
             benefits: [
                 "Enhanced directory listing with website link",
                 "2 social media spotlights per year",
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             member: "Gold Membership Level",
             star: 3,
-            description: "Top-tier membership with maximum exposure, premium placement, and exclusive business advantages.",
+            description: "Top-tier membership with maximum exposure, premium placement, and exclusive business advantages for 120000 NGN.",
             benefits: [
                 "Premium directory placement",
                 "Monthly social media spotlights",
