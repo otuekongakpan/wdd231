@@ -1,0 +1,92 @@
+:root{
+    --primary-color:#3b021d;
+    --secondary-color: #FCF6B1;
+    --accent-color: #9B1D20;
+    --text-color: #3D2B3D;
+    --heading-font: "Caparismo", serif;
+    --text-font: "Urbanist", sans-serif;
+}
+
+p {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    line-height: 1.5;
+}
+
+span {
+    font-family: var(--text-font);
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    font-weight: bolder;
+}
+
+h1 {
+    color: var(--primary-color)
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+#textFont {
+    font-family: var(--text-font);
+}
+
+#headingFont {
+    font-family: var(--heading-font);
+}
+
+#primary {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+#secondary {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+#accent {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+#textColor {
+    width: 40px;
+    height: 40px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+.color {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.color1 {
+    justify-items: center;
+}
+
+.color2 {
+    justify-items: center;
+}
+
+.color3 {
+    justify-items: center;
+}
+
+.color4 {
+    justify-items: center;
+}
