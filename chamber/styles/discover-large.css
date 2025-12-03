@@ -57,4 +57,13 @@
     width: 100%;
     justify-self: start; 
   }
+
+  .interest-card figure img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.interest-card figure img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
 }
