@@ -1,3 +1,60 @@
 @media only screen and (min-width: 64rem) {
-    
+
+  #discover-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .interest-card {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "image"
+      "description"
+      "address"
+      "button";
+
+    grid-template-rows: auto auto 1fr auto auto;  
+
+    row-gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+  }
+
+  .interest-card h2 {
+    grid-area: name;
+    margin: 0;
+  }
+
+  .interest-card figure {
+    grid-area: image;
+    margin: 0;
+  }
+
+  .interest-card figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .interest-card p {
+    grid-area: description;
+    margin: 0;
+  }
+
+  .interest-card address {
+    grid-area: address;
+    margin: 0 0 1rem 0;
+  }
+
+  .interest-card button {
+    grid-area: button;
+    width: 100%;
+    justify-self: start; 
+  }
 }
