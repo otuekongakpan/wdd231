@@ -1,0 +1,57 @@
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--primary-color); 
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    grid-area: button;
+}
+
+button:hover {
+    background-color: var(--secondary-color); 
+}
+
+.interest-card {
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    margin: 1rem 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+
+    display: grid;
+    grid-template-areas:
+    "name"
+    "image"
+    "description"
+    "address"
+    "button";
+    
+}
+
+.figure img {
+    width: 100%;
+    grid-area: image;
+}
+
+.interest-card h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+ 
+}
+
+.interest-card p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.interest-card address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
+
+

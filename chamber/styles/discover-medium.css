@@ -1,0 +1,49 @@
+@media only screen and (min-width: 38rem) {
+
+  .interest-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "image name"
+      "image description"
+      "image address"
+      "image button";
+    column-gap: 20px;
+    grid-auto-rows: min-content;
+    align-items: start;
+  }
+
+  figure {
+    margin: 0;
+    grid-area: image;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+  }
+
+  .interest-card h2 {
+    grid-area: name;
+    margin: 0 0 0.25rem 0;
+    line-height: 1.1;
+  }
+
+  .interest-card p {
+    grid-area: description;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .interest-card address {
+    grid-area: address;
+    margin: 0 0 0.5rem 0;
+    font-style: italic;
+  }
+
+  .interest-card button {
+    grid-area: button;
+    width: 100%;
+  }
+}
