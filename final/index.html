@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Restaurant Home page built by Otuekong Akpan for WDD231 final project">
+    <meta name="author" content="Otuekong Akpan">
+    <meta property="og:title" content="Gold Leaf Restaurant">
+    <meta property="og:image" content="https://otuekongakpan.github.io/wdd231/final/images/logo.webp">
+    <meta property="og:description" content="Golden Leaf is a modern dining destination offering premium meals, elegant ambiance, and a memorable culinary experience. Explore our menu, book reservations, and enjoy exceptional service crafted for every guest.">
+    <meta property="og:url" content="https://otuekongakpan.github.io/wdd231/final/">
+    
+    <title>Home | Golden Leaf Restaurant</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-medium.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="header-grid">
+            <div class="logo">
+            <img src="images/logo.webp" alt="Gold Leaf Restaurant logo" width="65" height="45">
+            <span>Golden Leaf Restaurant</span>
+            </div>
+            <button id="ham-btn" class="hamburger" aria-label="navigation button"></button>
+        </div>
+
+            <div class="grid2">
+                <nav id="navMenu">
+                    <ul class="nav-list">
+                        <li id="nav-object"><a href="index.html">Home</a></li>
+                        <li id="nav-object-sec"><a href="about.html">About</a></li>
+                        <li id="nav-object-third"><a href="menu.html">Menu</a></li>
+                        <li id="nav-object-fourth"><a href="reservation.html">Reservation</a></li>
+                        <li id="nav-object-fifth"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div id="hero-text">
+                <h1>Where Taste Meets Elegance</h1>
+                <p>Experience finely crafted dishes, warm ambiance, and exceptional service at Golden Leaf — your destination for elevated dining.</p>
+                <a href="reservation.html" id="join-us">Book a Reservation</a>
+            </div>
+            <div id="hero-img">
+                <img src="images/hero.webp" alt="hero image" class="hero-image" >
+            </div>
+        </section>
+        <div id="wayfinder">
+            <h2>Home</h2>
+        </div>
+        <section id="weather">
+            <div class="weatherForecast">
+                <h3>Weather Forecast</h3>
+                <p><span id="day1"></span>: <span id="todayForecast"></span> °F</p>
+                <p><span id="day2"></span>: <span id="tomorrowForecast"></span> °F</p>
+                <p><span id="day3"></span>: <span id="dayAfterForecast"></span> °F</p>
+                <p id="outdoorStatus"></p>
+            </div>
+        </section>
+        <section class="brief">
+            
+        </section>
+        <section class="featured">
+            <h3>Featured Dishes</h3>
+            <div id="featured-grid">
+                <div id="featured-dishes">
+                    <figure>
+                        <img src="images/dish1.webp">
+                        <figcaption>Penne Pasta and Tomato Sauce</figcaption>
+                    </figure>
+                </div>
+                <div id="featured-dishes">
+                    <figure>
+                        <img src="images/dish2.webp">
+                        <figcaption>Grilled Lobster</figcaption>
+                    </figure>
+                </div>
+                <div id="featured-dishes">
+                    <figure>
+                        <img src="images/dish3.webp">
+                        <figcaption>Brazilian Food</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerGrid">
+            <div id="footer1">
+                <p>Golden Leaf Restaurant</p>
+                <p>503 Richmond Blvd, Lagos, Nigeria</p>
+                <p>book@goldenleaf.com</p>
+                <p>(234) 8123456789</p>
+            </div>
+            <div id="footer2">
+                <img src="images/youtube.svg" alt="youtube logo" width="30" height="30">
+                <img src="images/twitter.svg" alt="twitter logo" width="30" height="30">
+                <img src="images/facebook.svg" alt="facebook logo" width="30" height="30">
+            </div>
+            <div id="footer3">
+                <p>WDD231 Final Project</p>
+                <p>Otuekong Akpan</p>
+                <p>©️<span id="currentyear"></span> Golden Leaf Restaurant</p>
+                <p>Last Modification: <span id=lastModified></span></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
