@@ -6,3 +6,47 @@
     --heading-font: "Caparismo", serif;
     --text-font: "Urbanist", sans-serif;
 }
+
+.brief-card {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 20px;
+padding: 30px 0;
+}
+
+
+.brief-left {
+grid-template-areas: "img text";
+}
+
+
+.brief-right {
+grid-template-areas: "text img";
+}
+
+
+.brief-left .brief-img { grid-area: img; }
+.brief-left .brief-text { grid-area: text; }
+
+
+.brief-right .brief-text { grid-area: text; }
+.brief-right .brief-img { grid-area: img; }
+
+
+.brief-img img {
+width: 50%;
+height: auto;
+border-radius: 10px;
+}
+
+
+.brief-cta {
+display: inline-block;
+margin-top: 15px;
+padding: 10px 20px;
+background-color: var(--primary-color);
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+}

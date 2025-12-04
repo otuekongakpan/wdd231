@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/home-small.css">
     <link rel="stylesheet" href="styles/home-medium.css">
     <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/home.js" defer></script>
@@ -32,7 +33,7 @@
     <header>
         <div class="header-grid">
             <div class="logo">
-            <img src="images/logo.webp" alt="Gold Leaf Restaurant logo" width="65" height="45">
+            <img src="images/logo.webp" alt="Gold Leaf Restaurant logo" width="65" height="45" loading="lazy">
             <span>Golden Leaf Restaurant</span>
             </div>
             <button id="ham-btn" class="hamburger" aria-label="navigation button"></button>
@@ -58,7 +59,7 @@
                 <a href="reservation.html" id="join-us">Book a Reservation</a>
             </div>
             <div id="hero-img">
-                <img src="images/hero.webp" alt="hero image" class="hero-image" >
+                <img src="images/hero.webp" alt="hero image" class="hero-image" loading="lazy">
             </div>
         </section>
         <div id="wayfinder">
@@ -73,27 +74,73 @@
                 <p id="outdoorStatus"></p>
             </div>
         </section>
+
         <section class="brief">
-            
+            <div id="brief-sections">
+
+                <div class="brief-card brief-right">
+                    <div class="brief-text">
+                        <h3>Quality Meals</h3>
+                        <p>
+                            Savor expertly prepared dishes made with fresh, locally sourced ingredients.
+                            Every plate is crafted to deliver rich flavor, perfect balance, and satisfying portions.
+                        </p>
+                        <a href="menu.html" class="brief-cta">Explore Menu</a>
+                    </div>
+                    <div class="brief-img">
+                        <img src="images/brief2.webp" alt="quality meals" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="brief-card brief-left">
+                    <div class="brief-img">
+                        <img src="images/brief3.webp" alt="aesthetic environment" loading="lazy">
+                    </div>
+                    <div class="brief-text">
+                        <h3>Aesthetic Environment</h3>
+                        <p>
+                            Dine in a warm, elegant space designed to elevate your experience.
+                            From ambient lighting to refined décor, every detail enhances your comfort.
+                        </p>
+                        <a href="about.html" class="brief-cta">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="brief-card brief-right">
+                    <div class="brief-text">
+                        <h3>Outdoor Dining</h3>
+                        <p>
+                            Enjoy fresh air and a serene atmosphere with our beautifully arranged outdoor seating.
+                            Perfect for brunch, romantic dinners, or relaxing with friends.
+                        </p>
+                        <a href="reservation.html" class="brief-cta">Reserve a Seat</a>
+                    </div>
+                    <div class="brief-img">
+                        <img src="images/brief1.webp" alt="outdoor dining" loading="lazy">
+                    </div>
+                </div>
+
+            </div>
         </section>
+
         <section class="featured">
             <h3>Featured Dishes</h3>
             <div id="featured-grid">
-                <div id="featured-dishes">
+                <div class="featured-dishes">
                     <figure>
-                        <img src="images/dish1.webp">
+                        <img src="images/dish1.webp" alt="Penne Pasta and Tomato Sauce" loading="lazy">
                         <figcaption>Penne Pasta and Tomato Sauce</figcaption>
                     </figure>
                 </div>
-                <div id="featured-dishes">
+                <div class="featured-dishes">
                     <figure>
-                        <img src="images/dish2.webp">
+                        <img src="images/dish2.webp" alt="Grilled Lobster" loading="lazy">
                         <figcaption>Grilled Lobster</figcaption>
                     </figure>
                 </div>
-                <div id="featured-dishes">
+                <div class="featured-dishes">
                     <figure>
-                        <img src="images/dish3.webp">
+                        <img src="images/dish3.webp" alt="Brazilian Food" loading="lazy">
                         <figcaption>Brazilian Food</figcaption>
                     </figure>
                 </div>
