@@ -1,0 +1,239 @@
+@media only screen and (min-width: 64rem) {
+    .brief-card {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 30px;
+padding: 30px 0;
+}
+
+
+.brief-left {
+grid-template-areas: "img text";
+}
+
+
+.brief-right {
+grid-template-areas: "text img";
+}
+
+
+.brief-left .brief-img { grid-area: img; }
+.brief-left .brief-text { grid-area: text; }
+
+
+.brief-right .brief-text { grid-area: text; }
+.brief-right .brief-img { grid-area: img; }
+
+
+.brief-img img {
+width: 50%;
+height: auto;
+border-radius: 10px;
+}
+
+.brief-cta {
+display: inline-block;
+margin-top: 15px;
+padding: 10px 20px;
+background-color: var(--primary-color);
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.weatherForecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#wayfinder {
+    text-align: center;
+}
+
+#outdoorStatus {
+    text-align: center;
+}
+
+.forecast-item {
+    text-align: center;
+}
+
+p {
+    font-family: var(--text-font);
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+figcaption {
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+span {
+    font-family: var(--text-font);
+    font-weight: bold;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+#section-heading {
+    text-align: center;
+}
+
+
+.hero {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 30px
+}
+
+#hero-cta {
+display: inline-block;
+margin-top: 15px;
+padding: 10px 20px;
+background-color: var(--primary-color);
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+}
+
+#featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+    padding-top: 30px;
+    margin-top: 30px;
+}
+#footer1 p{
+
+    text-align: left;
+    padding-left: 20px;
+}
+
+#footer3 p {
+
+    text-align: right;
+    padding-right: 20px;
+}
+
+section {
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.hero, #wayfinder, .brief {
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.hero img, #wayfinder, .brief img {
+    width: 100%;
+}
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brief-card {
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .brief-right .brief-img,
+    .brief-left .brief-img {
+        display: block;
+    }
+
+    .brief-img img {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .brief-text {
+        text-align: left;
+    }
+    
+    .brief-text2 {
+        text-align: right;
+    }
+
+    .brief-text2 h3 {
+        text-align: right;
+    }
+    .brief-text h3 {
+        text-align: left;
+    }
+
+    #hero-text{
+        text-align: left;
+    }
+
+    #hero-text h1{
+        text-align: left;
+    }
+
+    #featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+      header {
+    border-bottom: none;
+    padding: 1rem 0;
+  }
+
+  .header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  
+  #navMenu {
+    display: block !important;
+    background: transparent;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+  }
+
+  .nav-list li a {
+    color: var(--primary-color);
+    padding: 0.4rem 0.8rem;
+    border: none;
+    font-weight: 600;
+  }
+
+  .nav-list li a:hover {
+    color: var(--accent-color);
+    background: transparent;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+}

@@ -33,30 +33,32 @@
     <header>
         <div class="header-grid">
             <div class="logo">
-            <img src="images/logo.webp" alt="Gold Leaf Restaurant logo" width="65" height="45" loading="lazy">
-            <span>Golden Leaf Restaurant</span>
+                <img src="images/logo.webp" alt="Gold Leaf Restaurant logo" width="65" height="45" loading="lazy">
+                <span>Golden Leaf Restaurant</span>
             </div>
             <button id="ham-btn" class="hamburger" aria-label="navigation button"></button>
+
+        </div>
+        <div class="grid2">
+            <nav id="navMenu">
+                <ul class="nav-list">
+                    <li id="nav-object"><a href="index.html">Home</a></li>
+                    <li id="nav-object-sec"><a href="about.html">About</a></li>
+                    <li id="nav-object-third"><a href="menu.html">Menu</a></li>
+                    <li id="nav-object-fourth"><a href="reservation.html">Reservation</a></li>
+                    <li id="nav-object-fifth"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
 
-            <div class="grid2">
-                <nav id="navMenu">
-                    <ul class="nav-list">
-                        <li id="nav-object"><a href="index.html">Home</a></li>
-                        <li id="nav-object-sec"><a href="about.html">About</a></li>
-                        <li id="nav-object-third"><a href="menu.html">Menu</a></li>
-                        <li id="nav-object-fourth"><a href="reservation.html">Reservation</a></li>
-                        <li id="nav-object-fifth"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+
     </header>
     <main>
-        <section id="hero">
+        <section class="hero">
             <div id="hero-text">
                 <h1>Where Taste Meets Elegance</h1>
                 <p>Experience finely crafted dishes, warm ambiance, and exceptional service at Golden Leaf — your destination for elevated dining.</p>
-                <a href="reservation.html" id="join-us">Book a Reservation</a>
+                <a href="reservation.html" id="hero-cta">Book a Reservation</a>
             </div>
             <div id="hero-img">
                 <img src="images/hero.webp" alt="hero image" class="hero-image" loading="lazy">
@@ -65,17 +67,43 @@
         <div id="wayfinder">
             <h2>Home</h2>
         </div>
+
         <section id="weather">
+            <h3 id="section-heading">Weather Forecast</h3>
             <div class="weatherForecast">
-                <h3>Weather Forecast</h3>
-                <p><span id="day1"></span>: <span id="todayForecast"></span> °F</p>
-                <p><span id="day2"></span>: <span id="tomorrowForecast"></span> °F</p>
-                <p><span id="day3"></span>: <span id="dayAfterForecast"></span> °F</p>
-                <p id="outdoorStatus"></p>
+
+                <p class="forecast-item">
+                    <span id="day1"></span><br>
+                    <span id="forecast1"></span> °F
+                </p>
+
+                <p class="forecast-item">
+                    <span id="day2"></span><br>
+                    <span id="forecast2"></span> °F
+                </p>
+
+                <p class="forecast-item">
+                    <span id="day3"></span><br>
+                    <span id="forecast3"></span> °F
+                </p>
+
+                <p class="forecast-item">
+                    <span id="day4"></span><br>
+                    <span id="forecast4"></span> °F
+                </p>
+
+                <p class="forecast-item">
+                    <span id="day5"></span><br>
+                    <span id="forecast5"></span> °F
+                </p>
+
             </div>
+            <p id="outdoorStatus"></p>
         </section>
 
+
         <section class="brief">
+            <h3 id="section-heading">We Offer</h3>
             <div id="brief-sections">
 
                 <div class="brief-card brief-right">
@@ -88,15 +116,15 @@
                         <a href="menu.html" class="brief-cta">Explore Menu</a>
                     </div>
                     <div class="brief-img">
-                        <img src="images/brief2.webp" alt="quality meals" loading="lazy">
+                        <img src="images/brief1.webp" alt="quality meals" loading="lazy">
                     </div>
                 </div>
 
                 <div class="brief-card brief-left">
                     <div class="brief-img">
-                        <img src="images/brief3.webp" alt="aesthetic environment" loading="lazy">
+                        <img src="images/brief2.webp" alt="aesthetic environment" loading="lazy">
                     </div>
-                    <div class="brief-text">
+                    <div class="brief-text2">
                         <h3>Aesthetic Environment</h3>
                         <p>
                             Dine in a warm, elegant space designed to elevate your experience.
@@ -116,7 +144,7 @@
                         <a href="reservation.html" class="brief-cta">Reserve a Seat</a>
                     </div>
                     <div class="brief-img">
-                        <img src="images/brief1.webp" alt="outdoor dining" loading="lazy">
+                        <img src="images/brief3.webp" alt="outdoor dining" loading="lazy">
                     </div>
                 </div>
 
@@ -124,7 +152,7 @@
         </section>
 
         <section class="featured">
-            <h3>Featured Dishes</h3>
+            <h3 id="section-heading">Featured Dishes</h3>
             <div id="featured-grid">
                 <div class="featured-dishes">
                     <figure>

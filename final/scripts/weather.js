@@ -3,12 +3,10 @@ const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=6.6137
 
 async function apiFetch() {
     try {
-        // Fetch today’s weather (for sunshine check)
         const weatherRes = await fetch(weatherUrl);
         const weatherData = await weatherRes.json();
         checkOutdoorDining(weatherData);
 
-        // Fetch forecast
         const res = await fetch(forecastUrl);
         const data = await res.json();
         displayForecast(data);
@@ -19,15 +17,11 @@ async function apiFetch() {
 
 apiFetch();
 
-// -----------------------------------------
-// OUTDOOR DINING AVAILABILITY
-// -----------------------------------------
 
 function checkOutdoorDining(data) {
     const outdoorStatus = document.querySelector("#outdoorStatus");
     const desc = data.weather[0].description.toLowerCase();
 
-    // Anything with sun or clear skies
     if (desc.includes("sun") || desc.includes("clear")) {
         outdoorStatus.textContent = "☀️ Outdoor dining is available today!";
         outdoorStatus.style.color = "green";
@@ -37,41 +31,42 @@ function checkOutdoorDining(data) {
     }
 }
 
-// -----------------------------------------
-// FORECAST
-// -----------------------------------------
-
 function displayForecast(forecastData) {
 
+    // 5 days
     const dayLabels = [
         document.querySelector("#day1"),
         document.querySelector("#day2"),
-        document.querySelector("#day3")
+        document.querySelector("#day3"),
+        document.querySelector("#day4"),
+        document.querySelector("#day5")
     ];
 
     const tempSpans = [
-        document.querySelector("#todayForecast"),
-        document.querySelector("#tomorrowForecast"),
-        document.querySelector("#dayAfterForecast")
+        document.querySelector("#forecast1"),
+        document.querySelector("#forecast2"),
+        document.querySelector("#forecast3"),
+        document.querySelector("#forecast4"),
+        document.querySelector("#forecast5")
     ];
 
     const forecastParagraphs = document.querySelectorAll(".weatherForecast p");
 
-    // Get upcoming days
+    // Get next 5 days
     const now = new Date();
     const days = [];
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 5; i++) {
         const d = new Date(now);
         d.setDate(now.getDate() + i);
         days.push(d.toLocaleDateString("en-US", { weekday: "long" }));
     }
 
-    dayLabels[0].textContent = "Today";
-    dayLabels[1].textContent = days[1];
-    dayLabels[2].textContent = days[2];
+    dayLabels.forEach((label, i) => {
+        label.textContent = i === 0 ? "Today" : days[i];
+    });
 
-    // Organize temps + icons
+    // Temps + icons dictionary
     const dailyTemps = {};
     const dailyIcons = {};
 
@@ -85,7 +80,6 @@ function displayForecast(forecastData) {
         if (!dailyIcons[dayName]) dailyIcons[dayName] = item.weather[0].icon;
     });
 
-    // Display forecast
     days.forEach((day, i) => {
         const temps = dailyTemps[day] || [];
 
@@ -93,14 +87,12 @@ function displayForecast(forecastData) {
             ? (temps.reduce((a, b) => a + b, 0) / temps.length).toFixed(0)
             : "—";
 
-        // Insert icon
+        // icon
         const icon = document.createElement("img");
         icon.src = `https://openweathermap.org/img/w/${dailyIcons[day]}.png`;
         icon.alt = "forecast icon";
         icon.width = 40;
         icon.height = 40;
-        icon.style.verticalAlign = "middle";
-        icon.style.marginRight = "5px";
 
         forecastParagraphs[i].insertBefore(icon, tempSpans[i]);
     });
