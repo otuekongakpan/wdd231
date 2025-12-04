@@ -24,10 +24,10 @@ function checkOutdoorDining(data) {
 
     if (desc.includes("sun") || desc.includes("clear")) {
         outdoorStatus.textContent = "☀️ Outdoor dining is available today!";
-        outdoorStatus.style.color = "green";
+       
     } else {
         outdoorStatus.textContent = "🌥️ Outdoor dining is currently unavailable.";
-        outdoorStatus.style.color = "red";
+        
     }
 }
 
@@ -52,7 +52,7 @@ function displayForecast(forecastData) {
 
     const forecastParagraphs = document.querySelectorAll(".weatherForecast p");
 
-    // Get next 5 days
+
     const now = new Date();
     const days = [];
 
@@ -66,7 +66,6 @@ function displayForecast(forecastData) {
         label.textContent = i === 0 ? "Today" : days[i];
     });
 
-    // Temps + icons dictionary
     const dailyTemps = {};
     const dailyIcons = {};
 
@@ -87,7 +86,6 @@ function displayForecast(forecastData) {
             ? (temps.reduce((a, b) => a + b, 0) / temps.length).toFixed(0)
             : "—";
 
-        // icon
         const icon = document.createElement("img");
         icon.src = `https://openweathermap.org/img/w/${dailyIcons[day]}.png`;
         icon.alt = "forecast icon";
