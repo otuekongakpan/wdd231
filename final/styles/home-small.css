@@ -126,8 +126,11 @@ footer {
 
 }
 
-#footer2 {
-    padding: 10px 0;
+#footer2 img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
 }
 
 #wayfinder, #outdoorStatus {
@@ -153,6 +156,8 @@ footer {
 header {
   padding: 1rem;
   margin: 1rem;
+
+
 }
 
 .header-grid {
@@ -226,3 +231,4 @@ header {
 .hamburger.show::after {
   content: "\00D7"; 
 }
+

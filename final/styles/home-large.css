@@ -122,6 +122,13 @@ footer {
     padding-left: 20px;
 }
 
+#footer2{
+
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
 #footer3 p {
 
     text-align: right;
@@ -197,10 +204,21 @@ section {
         justify-items: center;
     }
 
-      header {
+    header, main, footer {
+        scroll-behavior: smooth;
+    }
+
+    header {
     border-bottom: none;
     padding: 1rem 0;
-  }
+
+    position: sticky;
+    top: 0;
+    width: 98%;
+    z-index: 999;
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.8); 
+}
 
   .header-grid {
     display: grid;
