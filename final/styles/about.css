@@ -1,0 +1,104 @@
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#aboutHero {
+    place-items: center;
+    padding-bottom: 30px;
+}
+
+#about-hero-text p {
+    text-align: center;
+    padding: 20px;
+}
+
+#history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+}
+
+
+#aesthetic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+}
+
+#aesthetic-img img {
+    width: 100%;
+}
+
+#team-grid {
+    display: grid;
+    gap: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+
+figure p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#bold-caption {
+    font-weight: bold;
+    color: var(--primary-color)
+}
+
+.reserve-container {
+    place-items: center;
+    text-align: center;
+}
+
+.reserve-container a {
+    place-items: center;
+}
+
+.reserve-btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    font-family: var(--text-font);
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.reserve-btn:hover {
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 900px) {
+    #team-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    #team-grid {
+        grid-template-columns: 1fr; 
+    }
+
+
+#history-grid {
+    grid-template-columns: 1fr;
+}
+
+#aesthetic-grid {
+    grid-template-columns: 1fr;
+}
+
+#aboutHero img {
+    width: 99%;
+    padding: 0;
+    margin: 0;
+
+}
+}

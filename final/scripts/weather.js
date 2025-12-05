@@ -7,16 +7,16 @@ async function apiFetch() {
         const weatherData = await weatherRes.json();
         checkOutdoorDining(weatherData);
 
-        const res = await fetch(forecastUrl);
-        const data = await res.json();
-        displayForecast(data);
+        const forecastRes = await fetch(forecastUrl);
+        const forecastData = await forecastRes.json();
+        displayForecast(forecastData);
+
     } catch (err) {
-        console.log(err);
+        console.log("API error:", err);
     }
 }
 
 apiFetch();
-
 
 function checkOutdoorDining(data) {
     const outdoorStatus = document.querySelector("#outdoorStatus");
@@ -24,16 +24,22 @@ function checkOutdoorDining(data) {
 
     if (desc.includes("sun") || desc.includes("clear")) {
         outdoorStatus.textContent = "☀️ Outdoor dining is available today!";
-       
     } else {
         outdoorStatus.textContent = "🌥️ Outdoor dining is currently unavailable.";
-        
     }
 }
 
 function displayForecast(forecastData) {
 
-    // 5 days
+    const now = new Date();
+    const days = [];
+
+    for (let i = 0; i < 5; i++) {
+        const d = new Date(now);
+        d.setDate(now.getDate() + i);
+        days.push(d.toLocaleDateString("en-US", { weekday: "long" }));
+    }
+
     const dayLabels = [
         document.querySelector("#day1"),
         document.querySelector("#day2"),
@@ -52,16 +58,6 @@ function displayForecast(forecastData) {
 
     const forecastParagraphs = document.querySelectorAll(".weatherForecast p");
 
-
-    const now = new Date();
-    const days = [];
-
-    for (let i = 0; i < 5; i++) {
-        const d = new Date(now);
-        d.setDate(now.getDate() + i);
-        days.push(d.toLocaleDateString("en-US", { weekday: "long" }));
-    }
-
     dayLabels.forEach((label, i) => {
         label.textContent = i === 0 ? "Today" : days[i];
     });
@@ -79,19 +75,32 @@ function displayForecast(forecastData) {
         if (!dailyIcons[dayName]) dailyIcons[dayName] = item.weather[0].icon;
     });
 
+
+    forecastParagraphs.forEach(p => {
+        const oldIcon = p.querySelector("img");
+        if (oldIcon) oldIcon.remove();
+    });
+
+ 
     days.forEach((day, i) => {
         const temps = dailyTemps[day] || [];
+
 
         tempSpans[i].textContent = temps.length
             ? (temps.reduce((a, b) => a + b, 0) / temps.length).toFixed(0)
             : "—";
 
-        const icon = document.createElement("img");
-        icon.src = `https://openweathermap.org/img/w/${dailyIcons[day]}.png`;
-        icon.alt = "forecast icon";
-        icon.width = 40;
-        icon.height = 40;
+  
+        const iconCode = dailyIcons[day];
 
-        forecastParagraphs[i].insertBefore(icon, tempSpans[i]);
+        if (iconCode) {
+            const icon = document.createElement("img");
+            icon.src = `https://openweathermap.org/img/w/${iconCode}.png`;
+            icon.alt = "forecast icon";
+            icon.width = 40;
+            icon.height = 40;
+
+            forecastParagraphs[i].insertBefore(icon, tempSpans[i]);
+        }
     });
 }
