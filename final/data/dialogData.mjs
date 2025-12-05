@@ -110,8 +110,8 @@ export const menuDialogs = {
     addOns: ["Chocolate chips", "Caramel", "Crushed nuts"]
   },
 
-  "Grilled Lobster with Garlic Butter": {
-    title: "Grilled Lobster with Garlic Butter",
+  "Grilled Lobster": {
+    title: "Grilled Lobster",
     body: "Whole lobster grilled with garlic butter.",
     allergens: ["Shellfish", "Dairy"],
     chefStory: "Represents our philosophy: premium ingredients, simple preparation.",

@@ -47,7 +47,7 @@ export const menuList = {
     {
       category: "Chef’s Specials",
       items: [
-        { name: "Grilled Lobster with Garlic Butter", price: "$34", image: "images/lobster.webp" },
+        { name: "Grilled Lobster", price: "$34", image: "images/lobster.webp" },
         { name: "Seasonal Risotto Deluxe", price: "$26", image: "images/risotto-deluxe.webp" },
         { name: "Signature Tiramisu", price: "$14", image: "images/tiramisu.webp" },
         { name: "Butter-Basted Filet Mignon", price: "$38", image: "images/filet-mignon.webp" },
