@@ -1,13 +1,7 @@
-/* ---------- Root Variables ---------- */
-:root {
-    --primary-color:#3b021d;
-    --secondary-color: #FCF6B1;
-    --accent-color: #9B1D20;
-    --text-color: #3D2B3D;
-    --heading-font: "Caprasimo", serif;
-    --text-font: "Urbanist", sans-serif;
-}
+#text {
 
+    text-align: center;
+}
 /* ---------- Menu Section ---------- */
 .menu-section {
   margin-bottom: 50px;
