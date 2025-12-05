@@ -1,8 +1,7 @@
 #text {
-
     text-align: center;
 }
-/* ---------- Menu Section ---------- */
+
 .menu-section {
   margin-bottom: 50px;
 }
@@ -17,14 +16,12 @@
   letter-spacing: 1px;
 }
 
-/* ---------- Menu Items Grid ---------- */
 .menu-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
-/* ---------- Menu Cards ---------- */
 .menu-card {
   background: var(--secondary-color);
   padding: 15px;
@@ -74,7 +71,6 @@
   margin-bottom: 12px;
 }
 
-/* ---------- Buttons ---------- */
 .menu-item-btn,
 .dialog-close {
   background: var(--primary-color);
@@ -95,7 +91,6 @@
   transform: translateY(-2px);
 }
 
-/* ---------- Dialog ---------- */
 #dialog {
   display: none;
   position: fixed;
@@ -131,12 +126,9 @@
   margin: 8px 0;
 }
 
-/* ---------- Responsive ---------- */
-
-/* Tablets (width: 601px - 900px) */
 @media (max-width: 900px) and (min-width: 601px) {
   .menu-items {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   .menu-card img.menu-card-img {
@@ -152,10 +144,9 @@
   }
 }
 
-/* Mobile (width ≤ 600px) */
 @media (max-width: 600px) {
   .menu-items {
-    grid-template-columns: 1fr; /* 1 card per row */
+    grid-template-columns: 1fr; 
   }
 
   .menu-card img.menu-card-img {
