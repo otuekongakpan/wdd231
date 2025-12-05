@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a Restaurant About page built by Otuekong Akpan for WDD231 final project">
+    <meta name="description" content="This is a Restaurant reservation page built by Otuekong Akpan for WDD231 final project">
     <meta name="author" content="Otuekong Akpan">
     <meta property="og:title" content="Gold Leaf Restaurant">
     <meta property="og:image" content="https://otuekongakpan.github.io/wdd231/final/images/logo.webp">
     <meta property="og:description" content="Golden Leaf is a modern dining destination offering premium meals, elegant ambiance, and a memorable culinary experience. Explore our menu, book reservations, and enjoy exceptional service crafted for every guest.">
     <meta property="og:url" content="https://otuekongakpan.github.io/wdd231/final/">
     
-    <title>About | Golden Leaf Restaurant</title>
+    <title>Reservation | Golden Leaf Restaurant</title>
 
     <link rel="icon" href="images/favicon.ico">
     
@@ -18,9 +18,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/home-small.css">
     <link rel="stylesheet" href="styles/home-large.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/reservation.css">
+    
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/home.js" defer></script>
@@ -53,6 +56,132 @@
 
     </header>
     <main>
+        <h1>Book a Table</h1>
+        <p id="rhead-text">Reserve your spot at Golden Leaf Restaurant and enjoy an unforgettable dining experience. Choose between indoor or outdoor seating, select your preferred date and time, and let us know any special requests to make your visit perfect.</p>
+        
+        <div id="full-grid">
+            <section id="reservation-form">
+                <h2>Reservation Form</h2>
+                <form method="GET" action="success.html" class="form">   
+
+                    <fieldset class="reserve-type">
+                        <label for="rtype">Reservation Type:</label>
+                        <div id="reserve-grid">
+                            <div class="reserve-grid1">
+                                <label>
+                                    <input type="radio" name="rtype" value="Indoor" required>
+                                    Indoor
+                                </label>
+                                <label>
+                                    <input type="radio" name="rtype" value="Outdoor" required>
+                                    Outdoor
+                                </label>
+                            </div>
+                            <div class="reserve-grid2">
+                                <p id="outdoorStatus">Limited outdoor seating available</p>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fullName">
+            
+                        <label for="fname">Full Name:</label>
+                        <input 
+                        type="text" 
+                        id="fname" 
+                        name="fname" 
+                        placeholder="John Doe" 
+                        autocomplete="name" 
+                        title="Enter your full name here" 
+                        required
+                        >
+                    </fieldset>
+
+                    <fieldset class="email">
+
+                        <label for="email">Email Address:</label>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="example@email.com" 
+                        autocomplete="email" 
+                        title="Enter a valid email address" 
+                        required
+                        >
+                    </fieldset>
+
+                    <fieldset class="phone">
+
+                        <label for="phone">Phone:</label>
+                        <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="+234 812 345 6789" 
+                        pattern="[0-9+\s]{7,15}" 
+                        title="Enter your phone number" 
+                        required
+                        >
+                    </fieldset>
+
+                    <fieldset class="date">
+
+                        <label for="res-date">Select Date:</label>
+                        <input 
+                        type="date" 
+                        id="res-date" 
+                        name="res-date" 
+                        required
+                        >
+                    </fieldset>
+
+                    <fieldset class="time">
+
+                        <label for="res-time">Select Time:</label>
+                        <input 
+                        type="time" 
+                        id="res-time" 
+                        name="res-time" 
+                        required
+                        >
+                    </fieldset>
+
+                    <fieldset class="guests">
+
+                        <label for="guests">Guests:</label>
+                        <input 
+                        type="number" 
+                        id="guests" 
+                        name="guests" 
+                        min="1" 
+                        max="20" 
+                        placeholder="2" 
+                        required
+                        >
+                    </fieldset>
+
+                    <fieldset class="requests">
+
+                        <label for="requests">Requests (optional):</label>
+                        <textarea 
+                        id="requests" 
+                        name="requests" 
+                        placeholder="E.g., high chair, anniversary decoration..." 
+                        rows="10"
+                        ></textarea>
+                    </fieldset>
+
+                    <button type="submit" class="reserve-submit">Reserve Now</button>
+
+                    </form>
+
+            </section>
+
+            <section id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.46310757624!2d3.1191427001003134!3d6.5483693711779205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1764959774509!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
 
     </main>
 

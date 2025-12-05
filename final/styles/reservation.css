@@ -1,0 +1,155 @@
+#reservation-form {
+    width: 500px;
+    padding: 20px;
+    background: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: var(--text-font);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#rhead-text {
+    text-align: center;
+    padding-bottom: 30px;
+}
+#full-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#reservation-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
+ input,
+ textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: var(--text-font);
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+#reservation-form input,
+#reservation-form textarea,
+#reservation-form select {
+    margin-bottom: 10px;  
+}
+
+#reservation-form fieldset {
+    margin-bottom: 15px;
+}
+
+
+#reservation-form input:focus,
+#reservation-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(59,2,29,0.4);
+    outline: none;
+}
+
+#reserve-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    gap: 5px;
+    align-items: center;          
+}
+
+.reserve-grid1 {
+    display: flex;
+    gap: 15px;                   
+}
+
+.reserve-grid2 {
+    display: flex;
+    align-items: center;         
+    justify-content: flex-start;
+}
+
+
+label {
+    display: flex;
+    font-family: var(--text-font);
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: var(--primary-color); 
+}
+
+.reserve-submit {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-family: var(--text-font);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    width: 100%;
+}
+
+.reserve-submit:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+    .reserve-type {
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 600px) {
+    #reservation-form {
+        padding: 15px;
+    }
+
+
+    #full-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    #map iframe {
+        width: 99%;
+        height: 300px; 
+    }
+
+    .reserve-submit {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #reservation-form input,
+    #reservation-form textarea {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+
+}
