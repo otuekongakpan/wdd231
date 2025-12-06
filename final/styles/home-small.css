@@ -115,6 +115,7 @@ footer {
     margin: 16px 0 0;
     text-align: center;
     background-color: var(--accent-color);
+    color: #fff;
 }
 
 #footer1 p, #footer3 p {
