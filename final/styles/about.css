@@ -39,13 +39,17 @@ main {
     place-items: center;
 }
 
+.team p {
+    text-align: center;
+}
+
 
 figure p {
     text-align: center;
     padding-bottom: 20px;
 }
 
-#bold-caption {
+.bold-caption {
     font-weight: bold;
     color: var(--primary-color)
 }
