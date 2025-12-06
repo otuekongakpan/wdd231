@@ -10,6 +10,12 @@
     gap: 15px;
 }
 
+legend {
+    font-weight: bold;
+    color: var(--text-color);
+    padding-bottom: 5px;
+}
+
 #rhead-text {
     text-align: center;
     padding-bottom: 30px;
