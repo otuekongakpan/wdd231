@@ -20,6 +20,9 @@ main {
     gap: 20px;
 }
 
+#history-text p {
+    width: 99%;
+}
 
 #aesthetic-grid {
     display: grid;
