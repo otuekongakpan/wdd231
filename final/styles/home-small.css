@@ -245,6 +245,17 @@ header {
   content: "\00D7"; 
 }
 
+.visit-msg {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-family: var(--text-font);
+  color: var(--accent-color)
+}
+
 @keyframes slideDownFade {
     0% {
         opacity: 0;
