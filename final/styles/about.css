@@ -24,6 +24,9 @@ main {
     width: 99%;
 }
 
+#history-img img {
+    width: 99%;
+}
 #aesthetic-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
